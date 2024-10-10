@@ -10,9 +10,11 @@
 
 .navbar ul {
     list-style-type: none;
-    background-color: rgb(7, 162, 110);
+    background-color: rgb(7, 0, 110);
     padding: 3%;
     margin: auto;
+    font-size: x-large;
+    
 
 }
 
@@ -22,7 +24,7 @@ li {
 }
 
 .navbar a {
-    color: rgb(0, 255, 85);
+    color: hsl(168, 100%, 50%);
     text-decoration: none;
     text-decoration: none;
     display: inline;
@@ -32,8 +34,9 @@ li {
 }
 
 .navbar a:hover {
+    background-color: hsl(244, 100%, 70%);
+    font-size: xx-large;
     
-    font-size: large;
 }
 
 a:link {
