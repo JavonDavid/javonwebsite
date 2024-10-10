@@ -1,0 +1,79 @@
+.flex-container {
+    display: flex;
+    display: flow-root;
+    background-color: rgba(211, 211, 211, 0);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(7, 162, 110);
+    padding: 3%;
+    margin: auto;
+
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: rgb(0, 255, 85);
+    text-decoration: none;
+    text-decoration: none;
+    display: inline;
+    font-weight: bolder;
+
+
+}
+
+.navbar a:hover {
+    
+    font-size: large;
+}
+
+a:link {
+    color: rgb(0, 255, 85);
+}
+
+a:hover {
+    color: rgb(255, 170, 0);
+    font-size: large;
+}
+
+a:active {
+    color: rgb(17, 0, 255);
+}
+
+a:visited {
+    color: rgb(0, 255, 81);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home {
+    margin: 5px;
+
+}
+
+.aboutMe {
+    padding-right: 10px;
+}
+
+.contacts {
+    padding-left: 10px;
+}
+
+
+
+body {
+    background-color: rgb(95, 249, 157);
+
+}

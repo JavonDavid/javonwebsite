@@ -1,0 +1,77 @@
+.graph {
+    display: flex;
+    display: flow-root;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+    border: 3px solid;
+    border-radius: 3px;
+
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(75, 237, 69);
+    padding: 3%;
+    margin: auto;
+    
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+.navbar a {
+    color: hsl(127, 100%, 24%);
+    text-decoration: none;
+    display: inline;
+    font-weight: bolder;
+    
+
+}
+
+
+.navbar a:hover {
+    font-size: x-large;
+}
+
+p::selection {
+    color: aqua;
+    background-color: white;
+}
+
+p {
+    margin-right: 20px;
+}
+
+#img {
+    float: left;
+    margin: 10px;
+}
+
+#img2 {
+    float: right;
+    margin: 10px;
+
+
+}
+
+.img3 {
+    text-align: center;
+    margin-top: 60px;
+
+
+}
+
+
+body {
+    background-color: rgb(255, 0, 0);
+    margin: 0px;
+
+}
+
+.paragraphs {
+    padding-left: 10px;
+}
