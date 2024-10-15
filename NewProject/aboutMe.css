@@ -1,78 +1,119 @@
+/* this is making the background that is above the boarder red aswell a and is making the home and about me take up the full space at the top  and 
+the same with the paragraph*/
+body {
+    background-color: hsl(191, 50%, 44%);
+    margin: auto;
+
+}
+
 .graph {
+    /* this is making my paragraphs and the text bend around the text and is making the background color and the border the way it is */
     display: flex;
     display: flow-root;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: red;
-    border: 3px solid;
-    border-radius: 3px;
+    color: hsl(184, 10%, 33%);
 
 }
-
 
 .navbar ul {
+    /* the color behind the home and about me button and removing the bullet points */
     list-style-type: none;
-    background-color: rgb(75, 237, 69);
-    padding: 3%;
+    background-color: hsl(354, 78%, 88%);
+    padding: 2%;
     margin: auto;
+    overflow: hidden;
     font-size: x-large;
-    
+
 }
 
+/* this is making any <a> tags in the navbar not have the underline that links have and making the text bolder */
+.navbar a {
+    color: hsl(184, 10%, 33%);
+    padding: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+
+
+}
+
+/* this making any <a> in the navbar when you hover over it it makes the text bigger*/
+.navbar a:hover {
+   background-color:hsl(354, 78%, 80%) ;
+}
+
+/* this is making the home and about me buttons stay side by side and is keeping the space inbetween them  */
 li {
     display: inline;
     margin-right: 10px;
+    float: left;
 }
 
-
-.navbar a {
-    color: hsl(127, 100%, 24%);
-    text-decoration: none;
-    display: inline;
+/* the color and the way the text look for the dark mode button */
+#darkMode {
+    color: hsl(185, 10%, 24%);
     font-weight: bolder;
-    
-
+    font-size: x-large;
 }
-
-
-.navbar a:hover {
+#darkMode 
+/* when you hover over the text Dark Mode it should get bigger when you hover over it */
+#darkMode:hover {
     font-size: xx-large;
 }
 
-p::selection {
-    color: aqua;
-    background-color: white;
+
+/* this is move the slide show  */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-p {
-    margin-right: 20px;
+/* this is chaing the width of the pictures so there all the pictures*/
+.slider img {
+    width: 30%;
+    display: none;
 }
 
-#img {
-    float: left;
-    margin: 10px;
-}
-
-#img2 {
-    float: right;
-    margin: 10px;
-
-
-}
-
-.img3 {
-    text-align: center;
-    margin-top: 60px;
-
+/*  when and the prev or next button is click it will add the keyframe fade and make it last one second and what ever picture it is will go from hidden to block (appear) */
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
 
 }
 
-
-body {
-    background-color: rgb(255, 0, 0);
-    margin: 0px;
-
+/* this is for the buttons for the slide show of pictures */
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.453);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.paragraphs {
-    padding-left: 10px;
+/* this is making the prev stay to the left */
+.prev {
+    left: 0;
+}
+
+/* this is making the next button stay to the right */
+.next {
+    right: 70%;
+}
+
+/* this is help the fade of the pictures when you click the next or prev buttons */
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

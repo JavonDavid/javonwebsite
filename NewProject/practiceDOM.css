@@ -1,0 +1,43 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust the width as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    display: none; /* Hide all images by default */
+}
+
+img.displaySlide {
+    display: block; /* Only show the current slide */
+    animation-name: fade;
+    animation-duration: 1s; /* Adjust the animation duration */
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@keyframes fade {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
